@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1024">
+  <title>Deva</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <div class="player">
+      <img id="current-cover" src="images/Covers/cover1.jpg" alt="Cover">
+      <div id="song-name">Song name</div>
+      <div id="producer-name">prod</div>
+      <audio id="audio" preload="auto"></audio>
+      <div class="controls">
+        <button onclick="prevSong()">◀</button>
+        <button id="play-button" onclick="togglePlay()">▶</button>
+        <button onclick="nextSong()">▶▶</button>
+      </div>
+      <input id="seek" type="range" min="0" max="100" value="0" step="1">
+    </div>
+
+    <div class="tilted-images">
+      <div class="left">
+        <img src="images/Photos/img1.jpg" alt="Song 1" class="tilted-image">
+      </div>
+
+      <div class="right-images">
+        <img src="images/Photos/img2.jpg" alt="Song 2" class="tilted-image">
+        <img src="images/Photos/img3.jpg" alt="Song 3" class="tilted-image">
+      </div>
+    </div>
+
+    <div class="song-list">
+      <div class="song-item" onclick="selectSong(0)">
+        <img src="images/Covers/cover1.jpg" alt="Aşk">
+        <p>Why I Love You</p>
+        <p>JAY-Z, Kanye West, Mr Hudson</p>
+      </div>
+      <div class="song-item" onclick="selectSong(1)">
+        <img src="images/Covers/cover2.jpg" alt="Çözüm Sendin">
+        <p>No Role Modelz</p>
+        <p>J. Cole</p>
+      </div>
+      <div class="song-item" onclick="selectSong(2)">
+        <img src="images/Covers/cover3.jpg" alt="Rüzgar">
+        <p>Solo</p>
+        <p>Future</p>
+      </div>
+      <div class="song-item" onclick="selectSong(3)">
+        <img src="images/Covers/cover4.jpg" alt="Kumralım">
+        <p>LVL</p>
+        <p>A$AP Rocky</p>
+      </div>
+      <div class="song-item" onclick="selectSong(4)">
+        <img src="images/Covers/cover5.jpg" alt="Ben">
+        <p>Dark Red</p>
+        <p>Steve Lacy</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
