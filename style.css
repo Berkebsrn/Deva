@@ -188,8 +188,3 @@ body {
   font-size: 0.8rem; /* Yapımcı adının boyutunu biraz küçültüyoruz */
   color: #aaa;
 }
-
-body {
-  transform: scale(0.5); /* Oranı ihtiyacına göre değiştirebilirsin */
-  transform-origin: top center; /* Yakınlaştırmanın merkezini belirliyoruz */
-}
